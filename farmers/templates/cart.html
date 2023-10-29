@@ -1,0 +1,67 @@
+<html>
+<style>
+
+      form {
+        border: 5px solid black;
+        padding: 50px;
+        width: 30%;
+        margin: 10% auto;
+      }
+
+      body {
+        background-color:pink;
+      }
+      
+     {
+        font-family: "Merriweather", serif;
+      }
+      .message{
+        margin: auto;
+        text-align: center;
+        color: red;
+      }
+</style>
+<body>
+<center>
+<form action="token" method="POST">
+  {% csrf_token %}
+  {% comment %} <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter username">
+  </div> 
+ <br>{% endcomment %}
+  <div class="form-group form-check">
+   
+    <label class="form-check-label" for="exampleCheck1">Check the successful paddy harvested</label>
+  </div>
+<input type="checkbox" id="v1" name="v1" value=" Long-grain rice">
+<label > Long-grain rice</label><br>
+<input type="checkbox" id="v2" name="v2" value=" Short-grain rice">
+<label > Short-grain rice</label><br>
+<input type="checkbox" id="v3" name="v3" value="Brown rice">
+<label > Brown rice</label><br>
+<input type="checkbox" id="v4" name="v4" value="Basmati rice">
+<label > Basmati rice</label><br><br>
+
+ <div class="form-group">
+    <label for="quantity">Total Quantity</label>
+    <input type="number" class="form-control" id="exampleInputQuantity" placeholder="Quantity in Quintal(1000kgs) ">
+  </div>
+  <br>
+ <div class="form-group">
+    <label for="pinCode">PinCode</label>
+    <input type="text" class="form-control" id="exampleInputPinCode" placeholder="Current Address PinCode">
+  </div>
+  
+  <br><br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+</center>
+</form>
+<div class="container message">
+  {% for message in messages %}
+  <h1 class="container"> {{message}} </h1>
+  {% endfor %}
+</div>
+</body>
+</html>

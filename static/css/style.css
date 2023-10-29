@@ -1,0 +1,82 @@
+.col-lg-2 {
+    display: inline-block;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover {
+    font-weight: bold;
+}
+
+.paina {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.nav-item:hover {
+    font-weight: bold;
+}
+
+.btn-group me-2 {
+    padding: 13px;
+}
+
+.item,
+img {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.col img {
+    border-radius: 100%;
+}
+
+body {
+    background-color: rgb(202 206 235);
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.dropdown-item:hover {
+    font-weight: bold;
+    color: rgb(110, 122, 212);
+
+}
+
+.card {
+    background-color: rgb(202 206 235);
+    
+}
+
+@media (max-width: 767px) {
+    .card {
+        display: flex;
+        flex-wrap: row;
+
+    }
+
+}
+
+footer {
+    background: black;
+    color: cornflowerblue;
+    text-align: center;
+
+}
+
+* {
+    font-family: 'Merriweather', serif;
+}
+.row>*{
+    margin: auto;
+}
+
+.cart{
+    max-height: 2000px;
+    min-height: 2000px;
+    
+}
